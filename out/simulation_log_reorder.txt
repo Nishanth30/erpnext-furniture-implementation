@@ -1,0 +1,178 @@
+2026-10-01  PO PUR-ORD-2026-00001 to Sabarmati Laminates Wholesale: ₹611,122 (arrives 13 Oct)
+2026-10-01  delivered MAT-DN-2026-00001 -> invoice ACC-SINV-2026-00009 ₹109,811 to Kovai Home Centre
+2026-10-01  delivered MAT-DN-2026-00002 -> invoice ACC-SINV-2026-00010 ₹10,089 to Mega Home Stores - Padi
+2026-10-01  delivered MAT-DN-2026-00003 -> invoice ACC-SINV-2026-00011 ₹87,738 to Kovai Home Centre
+2026-10-03  delivered MAT-DN-2026-00004 -> invoice ACC-SINV-2026-00012 ₹52,091 to Mega Home Stores - Padi
+2026-10-03  delivered MAT-DN-2026-00005 -> invoice ACC-SINV-2026-00013 ₹72,735 to Southside Furnishings - Pallikaranai
+2026-10-03  delivered MAT-DN-2026-00006 -> invoice ACC-SINV-2026-00014 ₹14,974 to Kanchi Furniture Mart
+2026-10-05  received ₹112,000 from Mega Home Stores - Padi for ACC-SINV-2026-00001
+2026-10-05  received ₹197,000 from Kanchi Furniture Mart for ACC-SINV-2026-00006
+2026-10-05  delivered MAT-DN-2026-00007 -> invoice ACC-SINV-2026-00015 ₹84,004 to Mega Home Stores - Padi
+2026-10-05  delivered MAT-DN-2026-00008 -> invoice ACC-SINV-2026-00016 ₹37,158 to Kovai Home Centre
+2026-10-05  delivered MAT-DN-2026-00009 -> invoice ACC-SINV-2026-00017 ₹65,844 to Mega Home Stores - Padi
+2026-10-05  delivered MAT-DN-2026-00010 -> invoice ACC-SINV-2026-00018 ₹15,694 to Anna Nagar Interiors
+2026-10-06  received ₹249,000 from Kovai Home Centre for ACC-SINV-2026-00007
+2026-10-06  received ₹9,887 from Mega Home Stores - Padi for ACC-SINV-2026-00010 (took ₹202 early discount)
+2026-10-06  custom order SAL-ORD-2026-00014 BLOCKED by sign-off gate: design drawing, customer sign-off
+2026-10-06  custom walk-in order SAL-ORD-2026-00014 signed and confirmed: ₹128,974
+2026-10-06  transit damage on WRD-2D for Anna Nagar Interiors: replacement pending (no stock)
+2026-10-06  delivered MAT-DN-2026-00011 -> invoice ACC-SINV-2026-00019 ₹34,751 to Anna Nagar Interiors
+2026-10-06  delivered MAT-DN-2026-00012 -> invoice ACC-SINV-2026-00020 ₹30,397 to Southside Furnishings - Pallikaranai
+2026-10-06  delivered MAT-DN-2026-00013 -> invoice ACC-SINV-2026-00021 ₹20,626 to Southside Furnishings - Pallikaranai
+2026-10-06  delivered MAT-DN-2026-00014 -> invoice ACC-SINV-2026-00022 ₹19,647 to Mega Home Stores - Padi
+2026-10-06  delivered MAT-DN-2026-00015 -> invoice ACC-SINV-2026-00023 ₹128,974 to Mega Home Stores - Padi
+2026-10-07  paid ₹282,000 to Parrys Hardware Mart (ACC-PINV-2026-00004)
+2026-10-07  TRANSIT DAMAGE COT-BASIC-Q at Kanchi Furniture Mart (Transit chipping) -> free replacement, cost ₹8,080
+2026-10-07  delivered MAT-DN-2026-00016 -> invoice ACC-SINV-2026-00024 ₹19,411 to Kanchi Furniture Mart
+2026-10-07  QC REJECTED WRD-3D on MAT-DN-2026-00017 (Finish fully dry) -> rework, ships tomorrow
+2026-10-07  TRANSIT DAMAGE MND-5FT at Anna Nagar Interiors (Edge banding peeled) -> free replacement, cost ₹9,066
+2026-10-07  delivered MAT-DN-2026-00018 -> invoice ACC-SINV-2026-00025 ₹52,687 to Anna Nagar Interiors
+2026-10-08  received ₹381,000 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00002
+2026-10-08  delivered MAT-DN-2026-00017 -> invoice ACC-SINV-2026-00026 ₹75,986 to Mega Home Stores - Padi
+2026-10-08  delivered MAT-DN-2026-00019 -> invoice ACC-SINV-2026-00027 ₹18,998 to Southside Furnishings - Pallikaranai
+2026-10-08  delivered MAT-DN-2026-00020 -> invoice ACC-SINV-2026-00028 ₹33,654 to Southside Furnishings - Pallikaranai
+2026-10-08  delivered MAT-DN-2026-00021 -> invoice ACC-SINV-2026-00029 ₹35,577 to Mega Home Stores - Padi
+2026-10-09  received ₹51,049 from Mega Home Stores - Padi for ACC-SINV-2026-00012 (took ₹1,042 early discount)
+2026-10-09  PO PUR-ORD-2026-00002 to Madras Ply and Lam Traders: ₹55,436 (arrives 11 Oct)
+2026-10-09  delivered MAT-DN-2026-00022 -> invoice ACC-SINV-2026-00030 ₹43,869 to Kanchi Furniture Mart
+2026-10-09  delivered MAT-DN-2026-00023 -> invoice ACC-SINV-2026-00031 ₹26,066 to Kovai Home Centre
+2026-10-09  delivered MAT-DN-2026-00024 -> invoice ACC-SINV-2026-00032 ₹35,577 to Mega Home Stores - Padi
+2026-10-10  PO PUR-ORD-2026-00003 to Sabarmati Laminates Wholesale: ₹99,592 (arrives 22 Oct)
+2026-10-10  delivered MAT-DN-2026-00025 -> invoice ACC-SINV-2026-00033 ₹14,974 to Kanchi Furniture Mart
+2026-10-12  received MAT-PRE-2026-00001 from Madras Ply and Lam Traders
+2026-10-12  received ₹197,000 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00003
+2026-10-12  received ₹83,000 from Kanchi Furniture Mart for ACC-SINV-2026-00004
+2026-10-12  received ₹82,324 from Mega Home Stores - Padi for ACC-SINV-2026-00015 (took ₹1,680 early discount)
+2026-10-12  received ₹64,527 from Mega Home Stores - Padi for ACC-SINV-2026-00017 (took ₹1,317 early discount)
+2026-10-12  paid ₹137,000 to Sowcarpet Upholstery Supplies (ACC-PINV-2026-00006)
+2026-10-12  PO PUR-ORD-2026-00004 to Parrys Hardware Mart: ₹54,127 (arrives 13 Oct)
+2026-10-12  PO PUR-ORD-2026-00005 to Sowcarpet Upholstery Supplies: ₹7,021 (arrives 13 Oct)
+2026-10-13  received MAT-PRE-2026-00002 + freight ₹8,000 loaded into material cost (MAT-LCV-2026-00001)
+2026-10-13  received MAT-PRE-2026-00003 from Parrys Hardware Mart
+2026-10-13  received MAT-PRE-2026-00004 from Sowcarpet Upholstery Supplies
+2026-10-13  received ₹403,000 from Kanchi Furniture Mart for ACC-SINV-2026-00005
+2026-10-13  received ₹72,735 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00013
+2026-10-13  received ₹19,254 from Mega Home Stores - Padi for ACC-SINV-2026-00022 (took ₹393 early discount)
+2026-10-13  received ₹126,395 from Mega Home Stores - Padi for ACC-SINV-2026-00023 (took ₹2,579 early discount)
+2026-10-13  received ₹74,466 from Mega Home Stores - Padi for ACC-SINV-2026-00026 (took ₹1,520 early discount)
+2026-10-13  received ₹34,865 from Mega Home Stores - Padi for ACC-SINV-2026-00029 (took ₹712 early discount)
+2026-10-13  delivered MAT-DN-2026-00026 -> invoice ACC-SINV-2026-00034 ₹30,267 to Mega Home Stores - Padi
+2026-10-13  delivered MAT-DN-2026-00027 -> invoice ACC-SINV-2026-00035 ₹33,984 to Mega Home Stores - Padi
+2026-10-13  delivered MAT-DN-2026-00028 -> invoice ACC-SINV-2026-00036 ₹32,922 to Mega Home Stores - Padi
+2026-10-13  delivered MAT-DN-2026-00029 -> invoice ACC-SINV-2026-00037 ₹35,577 to Mega Home Stores - Padi
+2026-10-13  delivered MAT-DN-2026-00030 -> invoice ACC-SINV-2026-00038 ₹42,002 to Mega Home Stores - Padi
+2026-10-14  received ₹34,865 from Mega Home Stores - Padi for ACC-SINV-2026-00032 (took ₹712 early discount)
+2026-10-14  DOWNTIME Machine breakdown: 50% of the day idle, ₹13,462 of salary/fixed cost with no output
+2026-10-15  delivered MAT-DN-2026-00031 -> invoice ACC-SINV-2026-00039 ₹33,984 to Mega Home Stores - Padi
+2026-10-15  delivered MAT-DN-2026-00032 -> invoice ACC-SINV-2026-00040 ₹32,922 to Mega Home Stores - Padi
+2026-10-15  delivered MAT-DN-2026-00033 -> invoice ACC-SINV-2026-00041 ₹30,940 to Southside Furnishings - Pallikaranai
+2026-10-15  delivered MAT-DN-2026-00034 -> invoice ACC-SINV-2026-00042 ₹44,336 to Anna Nagar Interiors
+2026-10-15  delivered MAT-DN-2026-00035 -> invoice ACC-SINV-2026-00043 ₹10,537 to Kovai Home Centre
+2026-10-16  delivered MAT-DN-2026-00036 -> invoice ACC-SINV-2026-00044 ₹31,948 to Anna Nagar Interiors
+2026-10-16  delivered MAT-DN-2026-00037 -> invoice ACC-SINV-2026-00045 ₹33,654 to Southside Furnishings - Pallikaranai
+2026-10-16  QC REJECTED MND-3X2 on MAT-DN-2026-00038 (Edge banding intact) -> rework, ships tomorrow
+2026-10-16  delivered MAT-DN-2026-00039 -> invoice ACC-SINV-2026-00046 ₹54,351 to Kanchi Furniture Mart
+2026-10-16  delivered MAT-DN-2026-00040 -> invoice ACC-SINV-2026-00047 ₹18,585 to Mega Home Stores - Padi
+2026-10-17  received ₹87,738 from Kovai Home Centre for ACC-SINV-2026-00011
+2026-10-17  paid ₹288,000 to Sabarmati Laminates Wholesale (ACC-PINV-2026-00001)
+2026-10-17  delivered MAT-DN-2026-00038 -> invoice ACC-SINV-2026-00048 ₹10,650 to Anna Nagar Interiors
+2026-10-17  delivered MAT-DN-2026-00041 -> invoice ACC-SINV-2026-00049 ₹10,537 to Kanchi Furniture Mart
+2026-10-17  delivered MAT-DN-2026-00042 -> invoice ACC-SINV-2026-00050 ₹72,735 to Southside Furnishings - Pallikaranai
+2026-10-17  delivered MAT-DN-2026-00043 -> invoice ACC-SINV-2026-00051 ₹31,058 to Kanchi Furniture Mart
+2026-10-17  TRANSIT DAMAGE SP-PHOTO-FRAME at Kanchi Furniture Mart (Wet finish smudged) -> free replacement, cost ₹120
+2026-10-17  TRANSIT DAMAGE SP-WALL-CLOCK at Kanchi Furniture Mart (Transit chipping) -> free replacement, cost ₹274
+2026-10-17  delivered MAT-DN-2026-00044 -> invoice ACC-SINV-2026-00052 ₹14,974 to Kanchi Furniture Mart
+2026-10-19  received ₹109,811 from Kovai Home Centre for ACC-SINV-2026-00009
+2026-10-19  received ₹18,998 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00027
+2026-10-19  received ₹33,654 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00028
+2026-10-19  received ₹29,662 from Mega Home Stores - Padi for ACC-SINV-2026-00034 (took ₹605 early discount)
+2026-10-19  received ₹33,304 from Mega Home Stores - Padi for ACC-SINV-2026-00035 (took ₹680 early discount)
+2026-10-19  received ₹14,974 from Kanchi Furniture Mart for ACC-SINV-2026-00014
+2026-10-19  received ₹41,162 from Mega Home Stores - Padi for ACC-SINV-2026-00038 (took ₹840 early discount)
+2026-10-19  paid ₹316,000 to Morbi Board Industries (ACC-PINV-2026-00002)
+2026-10-19  paid ₹282,000 to Ambattur Steel Tubes (ACC-PINV-2026-00005)
+2026-10-19  PO PUR-ORD-2026-00006 to Parrys Hardware Mart: ₹86,744 (arrives 20 Oct)
+2026-10-19  PO PUR-ORD-2026-00007 to Ambattur Steel Tubes: ₹5,829 (arrives 20 Oct)
+2026-10-19  PO PUR-ORD-2026-00008 to Sowcarpet Upholstery Supplies: ₹12,685 (arrives 20 Oct)
+2026-10-19  delivered MAT-DN-2026-00045 -> invoice ACC-SINV-2026-00053 ₹35,282 to Southside Furnishings - Pallikaranai
+2026-10-19  delivered MAT-DN-2026-00046 -> invoice ACC-SINV-2026-00054 ₹30,267 to Mega Home Stores - Padi
+2026-10-19  delivered MAT-DN-2026-00047 -> invoice ACC-SINV-2026-00055 ₹10,089 to Mega Home Stores - Padi
+2026-10-21  received MAT-PRE-2026-00005 from Parrys Hardware Mart
+2026-10-21  received MAT-PRE-2026-00006 from Ambattur Steel Tubes
+2026-10-21  received MAT-PRE-2026-00007 from Sowcarpet Upholstery Supplies
+2026-10-21  received ₹30,397 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00020
+2026-10-21  received ₹20,626 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00021
+2026-10-21  received ₹32,922 from Mega Home Stores - Padi for ACC-SINV-2026-00036
+2026-10-21  received ₹35,577 from Mega Home Stores - Padi for ACC-SINV-2026-00037
+2026-10-21  received ₹32,264 from Mega Home Stores - Padi for ACC-SINV-2026-00040 (took ₹658 early discount)
+2026-10-21  paid ₹332,000 to Madras Ply and Lam Traders (ACC-PINV-2026-00003)
+2026-10-21  custom walk-in order SAL-ORD-2026-00046 signed and confirmed: ₹128,974
+2026-10-21  TRANSIT DAMAGE OFT-5FT at Mega Home Stores - Padi (Wet finish smudged) -> free replacement, cost ₹6,573
+2026-10-21  delivered MAT-DN-2026-00048 -> invoice ACC-SINV-2026-00056 ₹14,868 to Mega Home Stores - Padi
+2026-10-21  delivered MAT-DN-2026-00049 -> invoice ACC-SINV-2026-00057 ₹34,385 to Kanchi Furniture Mart
+2026-10-21  delivered MAT-DN-2026-00050 -> invoice ACC-SINV-2026-00058 ₹37,170 to Mega Home Stores - Padi
+2026-10-21  delivered MAT-DN-2026-00051 -> invoice ACC-SINV-2026-00059 ₹128,974 to Southside Furnishings - Pallikaranai
+2026-10-22  received MAT-PRE-2026-00008 + freight ₹8,000 loaded into material cost (MAT-LCV-2026-00002)
+2026-10-22  received ₹19,411 from Kanchi Furniture Mart for ACC-SINV-2026-00024
+2026-10-22  received ₹33,304 from Mega Home Stores - Padi for ACC-SINV-2026-00039 (took ₹680 early discount)
+2026-10-22  PO PUR-ORD-2026-00009 to Sabarmati Laminates Wholesale: ₹518,551 (arrives 03 Nov)
+2026-10-22  delivered MAT-DN-2026-00052 -> invoice ACC-SINV-2026-00060 ₹10,089 to Mega Home Stores - Padi
+2026-10-22  delivered MAT-DN-2026-00053 -> invoice ACC-SINV-2026-00061 ₹19,618 to Anna Nagar Interiors
+2026-10-22  delivered MAT-DN-2026-00054 -> invoice ACC-SINV-2026-00062 ₹14,868 to Mega Home Stores - Padi
+2026-10-23  received ₹18,213 from Mega Home Stores - Padi for ACC-SINV-2026-00047 (took ₹372 early discount)
+2026-10-23  delivered MAT-DN-2026-00055 -> invoice ACC-SINV-2026-00063 ₹40,356 to Mega Home Stores - Padi
+2026-10-23  delivered MAT-DN-2026-00056 -> invoice ACC-SINV-2026-00064 ₹30,397 to Southside Furnishings - Pallikaranai
+2026-10-23  delivered MAT-DN-2026-00057 -> invoice ACC-SINV-2026-00065 ₹33,654 to Southside Furnishings - Pallikaranai
+2026-10-24  received ₹43,869 from Kanchi Furniture Mart for ACC-SINV-2026-00030
+2026-10-24  delivered MAT-DN-2026-00058 -> invoice ACC-SINV-2026-00066 ₹61,879 to Southside Furnishings - Pallikaranai
+2026-10-24  delivered MAT-DN-2026-00059 -> invoice ACC-SINV-2026-00067 ₹77,579 to Mega Home Stores - Padi
+2026-10-24  TRANSIT DAMAGE SP-PHOTO-FRAME at Kanchi Furniture Mart (Wet finish smudged) -> free replacement, cost ₹120
+2026-10-24  TRANSIT DAMAGE SP-PHOTO-FRAME at Kanchi Furniture Mart (Transit chipping) -> free replacement, cost ₹120
+2026-10-24  delivered MAT-DN-2026-00060 -> invoice ACC-SINV-2026-00068 ₹14,974 to Kanchi Furniture Mart
+2026-10-26  received ₹37,158 from Kovai Home Centre for ACC-SINV-2026-00016
+2026-10-26  received ₹29,662 from Mega Home Stores - Padi for ACC-SINV-2026-00054 (took ₹605 early discount)
+2026-10-26  received ₹14,974 from Kanchi Furniture Mart for ACC-SINV-2026-00033
+2026-10-26  received ₹9,887 from Mega Home Stores - Padi for ACC-SINV-2026-00055 (took ₹202 early discount)
+2026-10-26  received ₹14,571 from Mega Home Stores - Padi for ACC-SINV-2026-00056 (took ₹297 early discount)
+2026-10-26  PO PUR-ORD-2026-00010 to Parrys Hardware Mart: ₹66,812 (arrives 27 Oct)
+2026-10-26  PO PUR-ORD-2026-00011 to Sowcarpet Upholstery Supplies: ₹1,303 (arrives 27 Oct)
+2026-10-26  delivered MAT-DN-2026-00061 -> invoice ACC-SINV-2026-00069 ₹87,738 to Kanchi Furniture Mart
+2026-10-26  QC REJECTED OFT-5FT on MAT-DN-2026-00062 (Edge banding intact) -> rework, ships tomorrow
+2026-10-26  delivered MAT-DN-2026-00063 -> invoice ACC-SINV-2026-00070 ₹52,132 to Kanchi Furniture Mart
+2026-10-27  received MAT-PRE-2026-00009 from Parrys Hardware Mart
+2026-10-27  received MAT-PRE-2026-00010 from Sowcarpet Upholstery Supplies
+2026-10-27  received ₹26,066 from Kovai Home Centre for ACC-SINV-2026-00031
+2026-10-27  received ₹36,427 from Mega Home Stores - Padi for ACC-SINV-2026-00058 (took ₹743 early discount)
+2026-10-27  delivered MAT-DN-2026-00062 -> invoice ACC-SINV-2026-00071 ₹14,868 to Mega Home Stores - Padi
+2026-10-27  delivered MAT-DN-2026-00064 -> invoice ACC-SINV-2026-00072 ₹65,844 to Mega Home Stores - Padi
+2026-10-27  delivered MAT-DN-2026-00065 -> invoice ACC-SINV-2026-00073 ₹85,871 to Southside Furnishings - Pallikaranai
+2026-10-27  delivered MAT-DN-2026-00066 -> invoice ACC-SINV-2026-00074 ₹32,922 to Mega Home Stores - Padi
+2026-10-28  received ₹201,000 from Anna Nagar Interiors for ACC-SINV-2026-00008
+2026-10-28  received ₹30,940 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00041
+2026-10-28  received ₹9,887 from Mega Home Stores - Padi for ACC-SINV-2026-00060 (took ₹202 early discount)
+2026-10-28  QC REJECTED OFT-5FT on MAT-DN-2026-00067 (Handle alignment) -> rework, ships tomorrow
+2026-10-28  delivered MAT-DN-2026-00068 -> invoice ACC-SINV-2026-00075 ₹20,626 to Southside Furnishings - Pallikaranai
+2026-10-29  received ₹35,282 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00053
+2026-10-29  received ₹14,571 from Mega Home Stores - Padi for ACC-SINV-2026-00062 (took ₹297 early discount)
+2026-10-29  received ₹39,549 from Mega Home Stores - Padi for ACC-SINV-2026-00063 (took ₹807 early discount)
+2026-10-29  delivered MAT-DN-2026-00067 -> invoice ACC-SINV-2026-00076 ₹61,336 to Southside Furnishings - Pallikaranai
+2026-10-29  delivered MAT-DN-2026-00069 -> invoice ACC-SINV-2026-00077 ₹29,736 to Mega Home Stores - Padi
+2026-10-29  delivered MAT-DN-2026-00070 -> invoice ACC-SINV-2026-00078 ₹20,520 to Kovai Home Centre
+2026-10-29  QC REJECTED MND-7FT on MAT-DN-2026-00071 (Finish fully dry) -> rework, ships tomorrow
+2026-10-30  received ₹33,654 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00045
+2026-10-30  received ₹72,735 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00050
+2026-10-30  received ₹76,027 from Mega Home Stores - Padi for ACC-SINV-2026-00067 (took ₹1,552 early discount)
+2026-10-30  TRANSIT DAMAGE MND-7FT at Mega Home Stores - Padi (Transit chipping) -> free replacement, cost ₹15,035
+2026-10-30  delivered MAT-DN-2026-00071 -> invoice ACC-SINV-2026-00079 ₹33,984 to Mega Home Stores - Padi
+2026-10-30  delivered MAT-DN-2026-00072 -> invoice ACC-SINV-2026-00080 ₹14,868 to Mega Home Stores - Padi
+2026-10-30  delivered MAT-DN-2026-00073 -> invoice ACC-SINV-2026-00081 ₹43,011 to Mega Home Stores - Padi
+2026-10-30  QC REJECTED COT-BASIC-Q on MAT-DN-2026-00074 (Handle alignment) -> rework, ships tomorrow
+2026-10-31  received ₹10,537 from Kanchi Furniture Mart for ACC-SINV-2026-00049
+2026-10-31  received ₹128,974 from Southside Furnishings - Pallikaranai for ACC-SINV-2026-00059
+2026-10-31  delivered MAT-DN-2026-00074 -> invoice ACC-SINV-2026-00082 ₹19,411 to Kanchi Furniture Mart
+2026-10-31  delivered MAT-DN-2026-00075 -> invoice ACC-SINV-2026-00083 ₹34,385 to Kanchi Furniture Mart
+2026-10-31  delivered MAT-DN-2026-00076 -> invoice ACC-SINV-2026-00084 ₹53,631 to Mega Home Stores - Padi
+2026-10-31  delivered MAT-DN-2026-00077 -> invoice ACC-SINV-2026-00085 ₹35,577 to Mega Home Stores - Padi
+2026-10-31  transit damage on SP-KIDS-SCOOTER for Kanchi Furniture Mart: replacement pending (no stock)
+2026-10-31  delivered MAT-DN-2026-00078 -> invoice ACC-SINV-2026-00086 ₹14,974 to Kanchi Furniture Mart
+2026-10-31  month-end hardware count MAT-RECO-2026-00002: ₹2,388 of hardware missing vs book

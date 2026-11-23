@@ -1,0 +1,19 @@
+file,row,field,value,reason,action
+Item_List.xlsx,8,Last Rate,Rs.2250,text in number cell ('Rs.'),cleaned to 2250.0
+Item_List.xlsx,13,Last Rate,Rs.280,text in number cell ('Rs.'),cleaned to 280.0
+Item_List.xlsx,14,Last Rate,Rs.850,text in number cell ('Rs.'),cleaned to 850.0
+Item_List.xlsx,15,Last Rate,Rs.60,text in number cell ('Rs.'),cleaned to 60.0
+Item_List.xlsx,17,Last Rate,Rs.210,text in number cell ('Rs.'),cleaned to 210.0
+Item_List.xlsx,19,Last Rate,Rs.180,text in number cell ('Rs.'),cleaned to 180.0
+Item_List.xlsx,20,Last Rate,Rs.950,text in number cell ('Rs.'),cleaned to 950.0
+Item_List.xlsx,21,Last Rate,Rs.1450,text in number cell ('Rs.'),cleaned to 1450.0
+Item_List.xlsx,22,Last Rate,Rs.4300,text in number cell ('Rs.'),cleaned to 4300.0
+Item_List.xlsx,23,Last Rate,Rs.480,text in number cell ('Rs.'),cleaned to 480.0
+Item_List.xlsx,28,Last Rate,Rs.95,text in number cell ('Rs.'),cleaned to 95.0
+Item_List.xlsx,33,Last Rate,Rs.10,text in number cell ('Rs.'),cleaned to 10.0
+Party_List.xlsx,5,GSTIN,,missing GSTIN (blocks input-tax credit / e-invoice),collect from party
+Party_List.xlsx,12,GSTIN,33JMVUL7177Q1,malformed GSTIN (fails 15-char pattern),not loaded; confirm with party
+Party_List.xlsx,13,Name,MEGA HOME STORES  - PADI,duplicate party (case/spacing variant),merged into first record
+Stock_Count_Sep30.xlsx,29,Qty,-4.0,negative stock count,not loaded; recount
+Stock_Count_Sep30.xlsx,30,Item,Gold handle,unknown item,not loaded; identify item
+Outstanding_Sep30.xlsx,16,Party,Velachery Decor,receivable for unknown retailer,not loaded; confirm party or write off

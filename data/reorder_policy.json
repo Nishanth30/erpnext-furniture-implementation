@@ -1,0 +1,42 @@
+{
+  "BRD-UV-18": {
+    "daily_usage": 1.16,
+    "reorder_point": 17,
+    "order_qty": 20
+  },
+  "LAM-08-LINER": {
+    "daily_usage": 0.48,
+    "reorder_point": 7,
+    "order_qty": 10
+  },
+  "LAM-1MM-MARBLE": {
+    "daily_usage": 0.48,
+    "reorder_point": 7,
+    "order_qty": 10
+  },
+  "LAM-1MM-MATTE": {
+    "daily_usage": 1.77,
+    "reorder_point": 25,
+    "order_qty": 30
+  },
+  "PB-18-PRELAM": {
+    "daily_usage": 11.3,
+    "reorder_point": 159,
+    "order_qty": 170
+  },
+  "PLY-06-BACK": {
+    "daily_usage": 1.56,
+    "reorder_point": 22,
+    "order_qty": 30
+  },
+  "PLY-18-COM": {
+    "daily_usage": 3.13,
+    "reorder_point": 44,
+    "order_qty": 50
+  },
+  "PNL-GLOSS-PRINT": {
+    "daily_usage": 0.83,
+    "reorder_point": 12,
+    "order_qty": 20
+  }
+}

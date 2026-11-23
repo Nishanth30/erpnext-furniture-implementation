@@ -1,0 +1,208 @@
+{
+ "plan": "MFG-PP-2026-00001",
+ "sales_orders": [
+  "SAL-ORD-2026-00074",
+  "SAL-ORD-2026-00075",
+  "SAL-ORD-2026-00076",
+  "SAL-ORD-2026-00077",
+  "SAL-ORD-2026-00078"
+ ],
+ "finished_goods": [
+  [
+   "WRD-3D",
+   4.0
+  ],
+  [
+   "COT-STOR-Q",
+   3.0
+  ],
+  [
+   "WRD-4D",
+   2.0
+  ],
+  [
+   "MND-5FT",
+   3.0
+  ],
+  [
+   "WRD-2D",
+   3.0
+  ],
+  [
+   "COT-STOR-K",
+   2.0
+  ],
+  [
+   "MND-7FT",
+   2.0
+  ],
+  [
+   "OFT-5FT",
+   4.0
+  ],
+  [
+   "WRD-3D",
+   3.0
+  ],
+  [
+   "COT-BASIC-Q",
+   3.0
+  ]
+ ],
+ "materials": {
+  "PB-18-PRELAM": {
+   "required": 93.5,
+   "in_stock": 237.5,
+   "to_request": 0.0
+  },
+  "BRD-UV-18": {
+   "required": 17.5,
+   "in_stock": 102.0,
+   "to_request": 0.0
+  },
+  "PLY-06-BACK": {
+   "required": 17.5,
+   "in_stock": 101.0,
+   "to_request": 0.0
+  },
+  "EDGE-PVC-2MM": {
+   "required": 1437.0,
+   "in_stock": 379.0,
+   "to_request": 1058.0
+  },
+  "HW-HINGE-SC": {
+   "required": 129.0,
+   "in_stock": 147.0,
+   "to_request": 0.0
+  },
+  "HW-HANDLE": {
+   "required": 53.0,
+   "in_stock": 56.0,
+   "to_request": 0.0
+  },
+  "HW-LOCK": {
+   "required": 20.0,
+   "in_stock": 12.0,
+   "to_request": 8.0
+  },
+  "HW-CHANNEL": {
+   "required": 29.0,
+   "in_stock": 21.0,
+   "to_request": 8.0
+  },
+  "HW-ROD-SET": {
+   "required": 14.0,
+   "in_stock": 13.0,
+   "to_request": 1.0
+  },
+  "HW-SCREW-BOX": {
+   "required": 29.0,
+   "in_stock": 1.0,
+   "to_request": 28.0
+  },
+  "HW-MINIFIX": {
+   "required": 486.0,
+   "in_stock": 813.0,
+   "to_request": 0.0
+  },
+  "ADH-PVA": {
+   "required": 18.8,
+   "in_stock": 19.0,
+   "to_request": 0.0
+  },
+  "PKG-LARGE": {
+   "required": 29.0,
+   "in_stock": 35.0,
+   "to_request": 0.0
+  },
+  "PNL-GLOSS-PRINT": {
+   "required": 5.4,
+   "in_stock": 31.2,
+   "to_request": 0.0
+  },
+  "MS-TUBE-25": {
+   "required": 26.799999999999997,
+   "in_stock": 76.4,
+   "to_request": 0.0
+  },
+  "HW-TUBE-BRKT": {
+   "required": 32.0,
+   "in_stock": 30.0,
+   "to_request": 2.0
+  },
+  "UPH-FOAM-40D": {
+   "required": 5.4,
+   "in_stock": 7.2,
+   "to_request": 0.0
+  },
+  "UPH-FABRIC": {
+   "required": 8.1,
+   "in_stock": 24.8,
+   "to_request": 0.0
+  },
+  "UPH-BUTTON": {
+   "required": 108.0,
+   "in_stock": 184.0,
+   "to_request": 0.0
+  },
+  "PLY-18-COM": {
+   "required": 11.8,
+   "in_stock": 86.8,
+   "to_request": 0.0
+  },
+  "LAM-1MM-MATTE": {
+   "required": 7.6,
+   "in_stock": 70.8,
+   "to_request": 0.0
+  }
+ },
+ "material_requests": [
+  "MAT-MR-2026-00002",
+  "MAT-MR-2026-00005",
+  "MAT-MR-2026-00004",
+  "MAT-MR-2026-00001",
+  "MAT-MR-2026-00003"
+ ],
+ "reorder_policy": {
+  "BRD-UV-18": {
+   "daily_usage": 1.16,
+   "reorder_point": 17,
+   "order_qty": 20
+  },
+  "LAM-08-LINER": {
+   "daily_usage": 0.48,
+   "reorder_point": 7,
+   "order_qty": 10
+  },
+  "LAM-1MM-MARBLE": {
+   "daily_usage": 0.48,
+   "reorder_point": 7,
+   "order_qty": 10
+  },
+  "LAM-1MM-MATTE": {
+   "daily_usage": 1.77,
+   "reorder_point": 25,
+   "order_qty": 30
+  },
+  "PB-18-PRELAM": {
+   "daily_usage": 11.3,
+   "reorder_point": 159,
+   "order_qty": 170
+  },
+  "PLY-06-BACK": {
+   "daily_usage": 1.56,
+   "reorder_point": 22,
+   "order_qty": 30
+  },
+  "PLY-18-COM": {
+   "daily_usage": 3.13,
+   "reorder_point": 44,
+   "order_qty": 50
+  },
+  "PNL-GLOSS-PRINT": {
+   "daily_usage": 0.83,
+   "reorder_point": 12,
+   "order_qty": 20
+  }
+ }
+}

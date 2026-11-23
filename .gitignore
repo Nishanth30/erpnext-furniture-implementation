@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+frappe_docker/
+out/sim_run.txt
+*.sql
+.DS_Store
+snapshots/
+.demo_logins
+.pytest_cache/

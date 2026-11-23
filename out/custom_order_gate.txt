@@ -1,0 +1,2 @@
+SAL-ORD-2026-00014 blocked on 2026-10-06:
+417: Custom order cannot be confirmed until the specification is complete and signed. Missing: design drawing, customer sign-off
