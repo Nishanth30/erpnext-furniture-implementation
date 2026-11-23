@@ -109,8 +109,11 @@ def create_sales_order(key, retailer, lines, staff_name):
     """Idempotent on ERPNext side: if a Sales Order already carries this intake key, return it."""
     found = erp_request("GET", "/api/resource/Sales Order",
                         params={"filters": json.dumps([["custom_intake_ref", "=", key], ["docstatus", "<", 2]]),
-                                "fields": '["name"]'})["data"]
+                                "fields": '["name","docstatus"]'})["data"]
     if found:
+        if found[0]["docstatus"] == 0:      # crashed between insert and submit last time: finish the job
+            draft = erp_request("GET", f"/api/resource/Sales Order/{found[0]['name']}")["data"]
+            erp_request("POST", "/api/method/frappe.client.submit", json={"doc": draft})
         return found[0]["name"]
     taxes = erp_request("POST", "/api/method/erpnext.controllers.accounts_controller.get_taxes_and_charges",
                         json={"master_doctype": "Sales Taxes and Charges Template", "master_name": TAX_TEMPLATE})["message"]

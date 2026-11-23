@@ -45,7 +45,7 @@ make-or-buy decision on a new cold press, breakdowns, and unmeasured offcut reco
 | **Scrap recovery** | Offcuts valued into a Scrap Yard and consumed by frame, clock and scooter BOMs |
 | **Owner reporting** | 4 SQL query reports (*Daily Sales and Profit*, *Product Profitability*, *Margin Leaks*, *Make or Buy*), 5 number cards, 2 charts, an Owner Dashboard workspace |
 | **Roles** | Factory Owner / Accountant / Store and Floor / Retail Floor Sales role profiles |
-| **REST integration** | Retail order intake service (FastAPI): floor staff send orders from a phone → validated → confirmed Sales Order via the ERPNext REST API; outbox + idempotency keys + retry with backoff → **exactly-once even through outages** (8/8 integration tests) |
+| **REST integration** | Retail order intake service (FastAPI): floor staff send orders from a phone → validated → confirmed Sales Order via the ERPNext REST API; outbox + idempotency keys + retry with backoff → **idempotent and retry-safe through outages** (9/9 integration tests) |
 | **Alerts** | In-app notifications: every confirmed order alerts the owner, accountant and store (with who sent it from the retailer floor); POs awaiting approval alert only the owner |
 | **UAT** | 18 user-acceptance test cases executed against the site with evidence: **18/18 PASS** |
 | **Migration** | Messy legacy Excel → cleansing, mapping and validation → opening stock and dues; every rejected row logged with a reason; **SQL reconciliation PASS on stock, receivables, payables and the opening account** |

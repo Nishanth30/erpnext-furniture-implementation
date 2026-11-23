@@ -44,7 +44,7 @@ email account or a WhatsApp Business provider is configured.
 | POST | `/api/orders` | JSON: `{"idempotency_key", "lines": [{"item_code", "qty"}]}` with header `X-Staff-Token` |
 | GET | `/api/orders/{key}` | Status: queued / sent / rejected, ERPNext order number, attempts, last error |
 
-## Tests (`integration/order_intake/test_intake.py`, against the live site): 8/8 pass
+## Tests (`integration/order_intake/test_intake.py`, against the live site): 9/9 pass
 
 1. Order creates a confirmed Sales Order for the staff member's retailer
 2. Double tap → one Sales Order
@@ -53,6 +53,7 @@ email account or a WhatsApp Business provider is configured.
 5–6. Quantity 0 and 21 → 422
 7. ERPNext outage → order queued → retry after recovery → exactly one Sales Order
 8. Crash after ERPNext write → replay finds the existing order, no duplicate
+9. Crash between saving the draft and submitting it → replay submits that draft instead of stopping at it
 
 ## Run
 

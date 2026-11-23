@@ -100,3 +100,18 @@ def test_crash_after_erp_write_is_still_exactly_once(svc):
     r = client.post("/api/orders", json=order(key, item="OFT-5FT", qty=1), headers={"X-Staff-Token": "PADI-03"})
     assert r.json()["erp_order"] == created
     assert len(erp_orders_with_ref(module, key)) == 1
+
+
+def test_crash_between_insert_and_submit_is_completed_on_replay(svc):
+    """ERPNext saved a draft but the service died before submitting: the replay must submit that draft, not stop at it."""
+    module, client = svc
+    key = uuid.uuid4().hex
+    draft = module.erp_request("POST", "/api/resource/Sales Order", json={
+        "doctype": "Sales Order", "customer": "Mega Home Stores - Padi", "company": module.COMPANY,
+        "transaction_date": module.date.today().isoformat(), "delivery_date": module.date.today().isoformat(),
+        "set_warehouse": module.FG_WAREHOUSE, "custom_order_kind": "Standard", "custom_intake_ref": key,
+        "items": [{"item_code": "MND-3X2", "qty": 1, "warehouse": module.FG_WAREHOUSE}]})["data"]
+    r = client.post("/api/orders", json=order(key, item="MND-3X2", qty=1), headers={"X-Staff-Token": "PADI-05"})
+    assert r.json()["erp_order"] == draft["name"]
+    [so] = erp_orders_with_ref(module, key)
+    assert so["docstatus"] == 1
