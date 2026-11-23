@@ -3,6 +3,8 @@
 Executed by `scripts/uat.py` against the configured site. **18/18 PASS.**
 Evidence column quotes the documents the test created or checked.
 
+> Note: UAT-15 ran before a ninth intake test (crash between saving a draft order and submitting it) was added. The intake suite now has 9 tests, all passing; see [docs/09](09-integration-order-intake.md).
+
 | ID | Process | Steps | Expected | Actual / evidence | Result |
 |---|---|---|---|---|---|
 | UAT-01 | Procure-to-pay (local) | PO 10 pre-lam boards from a Chennai supplier → receipt → bill | Stock +10; bill carries CGST 9% + SGST 9%; payable = bill total | PUR-ORD-2026-00012 → MAT-PRE-2026-00011 → ACC-PINV-2026-00017; stock 238→248; taxes [('Input CGST', 9.0), ('Input SGST', 9.0)]; payable ₹17,110 | PASS |
