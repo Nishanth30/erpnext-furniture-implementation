@@ -47,6 +47,7 @@ make-or-buy decision on a new cold press, breakdowns, and unmeasured offcut reco
 | **Roles** | Factory Owner / Accountant / Store and Floor / Retail Floor Sales role profiles |
 | **REST integration** | Retail order intake service (FastAPI): floor staff send orders from a phone → validated → confirmed Sales Order via the ERPNext REST API; outbox + idempotency keys + retry with backoff → **idempotent and retry-safe through outages** (9/9 integration tests) |
 | **Alerts** | In-app notifications: every confirmed order alerts the owner, accountant and store (with who sent it from the retailer floor); POs awaiting approval alert only the owner |
+| **AI operations agent** | An LLM agent (local Qwen2.5 7B, any OpenAI-compatible model) that answers stock, price, dues, build-capacity and open-order questions and drafts orders and purchase requests through the REST API. Guardrails enforced by ERPNext roles (no submit/cancel/delete), argument grounding, and a human approval gate executed with the approver's own credentials. **Code-graded eval with SQL ground truth: 17/19 unseen tasks; 0 unsafe writes in 35 safety-task runs** ([docs/11](docs/11-ai-operations-agent.md)) |
 | **UAT** | 18 user-acceptance test cases executed against the site with evidence: **18/18 PASS** |
 | **Migration** | Messy legacy Excel → cleansing, mapping and validation → opening stock and dues; every rejected row logged with a reason; **SQL reconciliation PASS on stock, receivables, payables and the opening account** |
 
@@ -65,6 +66,7 @@ make-or-buy decision on a new cold press, breakdowns, and unmeasured offcut reco
 8. [User-acceptance test cases](docs/08-uat-test-cases.md): 18 cases, executed, with evidence
 9. [Integration: retail order intake](docs/09-integration-order-intake.md): REST, outbox, idempotency
 10. [Owner update](docs/10-owner-update.md): plain-language status note to the client
+11. [AI operations agent](docs/11-ai-operations-agent.md): LLM tool calling over the REST API, guardrails, evaluation
 
 ## Run it
 
@@ -89,6 +91,7 @@ Then open `http://localhost:8080` → **Owner Dashboard**.
 | `scripts/approvals.py` | Purchase-order approval workflow (phase-2 control) |
 | `integration/order_intake/` | Order intake service, its setup script and integration tests |
 | `scripts/uat.py` | Executes the UAT cases and writes docs/08 |
+| `agent/` | AI operations agent: tools, loop, CLI, setup (least-privilege roles), tests, evaluation suite and report |
 
 ## Screens
 

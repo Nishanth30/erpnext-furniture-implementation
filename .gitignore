@@ -7,3 +7,5 @@ out/sim_run.txt
 snapshots/
 .demo_logins
 .pytest_cache/
+agent/.env
+agent/traces/
