@@ -359,7 +359,8 @@ class ERPTools:
             if qty + 1e-9 < self.shortages[it["name"]]:
                 raise ToolError(f"{it['name']} is short by {self.shortages[it['name']]}; quantity {qty} would not cover it")
             return it
-        said = _tokens(self.user_text)
+        current = self.user_latest if self.user_latest is not None else self.user_text
+        said = _tokens(current)
         mine = _tokens(_item_text(it)) - FILLER
         if not (mine - {t for t in mine if t.isdigit()}) & said:
             raise ToolError(f"the user never mentioned {it['item_name']}. Ask the user which product they mean; create nothing.")
@@ -368,7 +369,7 @@ class ERPTools:
             if not (mine - _tokens(_item_text(s))) & said:
                 raise ToolError(f"the user's words don't tell {it['item_name']} apart from {s['item_name']}. "
                                 "Ask the user which one they mean; create nothing.")
-        if qty not in numbers_in(self.user_text):
+        if qty not in numbers_in(current):
             raise ToolError(f"the user did not give quantity {qty:g} for {it['item_name']}. Ask the user; create nothing.")
         return it
 
@@ -391,6 +392,12 @@ class ERPTools:
     def _grounded_date(self, iso: str | None, what: str):
         if iso and self.user_text is not None and not mentions_date(self.user_text, iso):
             raise ToolError(f"the user did not give a {what}; omit it to use the standard lead time")
+
+    def _submit_wanted(self, flag: bool):
+        """(submit?, note). A submit the user never asked for is dropped, not fatal: the draft is still made."""
+        if flag and self.user_latest is not None and not SUBMIT_WORDS.search(self.user_latest):
+            return False, "submit ignored: the user did not ask to submit; this is a draft only"
+        return flag, None
 
     def _gate_submit(self):
         if self.user_latest is not None and not SUBMIT_WORDS.search(self.user_latest):
@@ -548,8 +555,7 @@ class ERPTools:
                 raise ToolError(f"quantity {ln.qty} for {it['name']} must be a whole number between 1 and {MAX_LINE_QTY}")
             lines.append({"item_code": it["name"], "qty": int(ln.qty)})
         self._grounded_date(a.delivery_date, "delivery date")
-        if a.submit:
-            self._gate_submit()
+        submit, ignored = self._submit_wanted(a.submit)
         due = _parse_date(a.delivery_date, DEFAULT_LEAD_DAYS)
         existing, ref = self._existing_draft("Sales Order", self._ref({"so": cust["name"], "due": due,
                                                                        "lines": sorted((l["item_code"], l["qty"]) for l in lines)}))
@@ -564,7 +570,7 @@ class ERPTools:
                 "custom_order_kind": "Standard", "custom_agent_ref": ref, "taxes_and_charges": TAX_TEMPLATE, "taxes": taxes,
                 "items": [{**l, "delivery_date": due, "warehouse": FG_WAREHOUSE} for l in lines]})
             again = False
-        out = {"draft_sales_order": doc["name"], "status": self._status(doc["docstatus"]), "already_existed": again,
+        out = {**({"note": ignored} if ignored else {}), "draft_sales_order": doc["name"], "status": self._status(doc["docstatus"]), "already_existed": again,
                "customer": cust["name"], "delivery_date": due,
                "lines": [{"item_code": r["item_code"], "qty": _num(r["qty"]), "rate_inr": _num(r["rate"]),
                           "amount_inr": _num(r["amount"])} for r in doc["items"]],
@@ -574,7 +580,7 @@ class ERPTools:
             if dues["total_overdue_inr"] > 0:
                 out["credit_warning"] = (f"{cust['name']} has INR {dues['total_overdue_inr']:,.0f} overdue (oldest "
                                          f"{dues['oldest_days_overdue']} days). Mention this; the approver also sees it.")
-            if a.submit:
+            if submit:
                 out["submission"] = self.submit_document(SubmitArgs(doctype="Sales Order", name=doc["name"]))
         except (ToolError, ERPError) as e:
             out["warning"] = f"draft created, but a follow-up step failed: {e}"
@@ -593,8 +599,7 @@ class ERPTools:
                        if d.get("default_warehouse")), "Raw Material Store - KFW")
             lines.append({"item_code": it["name"], "qty": ln.qty, "warehouse": wh, "uom": it["stock_uom"]})
         self._grounded_date(a.required_by, "required-by date")
-        if a.submit:
-            self._gate_submit()
+        submit, ignored = self._submit_wanted(a.submit)
         need_by = _parse_date(a.required_by, DEFAULT_LEAD_DAYS)
         existing, ref = self._existing_draft("Material Request",
                                              self._ref({"mr": sorted((l["item_code"], l["qty"]) for l in lines), "by": need_by}))
@@ -606,10 +611,10 @@ class ERPTools:
                 "transaction_date": date.today().isoformat(), "schedule_date": need_by, "custom_agent_ref": ref,
                 "items": [{**l, "schedule_date": need_by, "description": a.reason[:140]} for l in lines]})
             again = False
-        out = {"draft_material_request": doc["name"], "status": self._status(doc["docstatus"]), "already_existed": again,
+        out = {**({"note": ignored} if ignored else {}), "draft_material_request": doc["name"], "status": self._status(doc["docstatus"]), "already_existed": again,
                "required_by": need_by, "lines": [{"item_code": r["item_code"], "qty": _num(r["qty"]),
                                                   "warehouse": r["warehouse"]} for r in doc["items"]]}
-        if a.submit:
+        if submit:
             try:
                 out["submission"] = self.submit_document(SubmitArgs(doctype="Material Request", name=doc["name"]))
             except (ToolError, ERPError) as e:

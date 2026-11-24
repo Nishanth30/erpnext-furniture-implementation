@@ -9,11 +9,6 @@ documents through the same REST API as the order-intake service ([09](09-integra
 It runs on a local open model (Qwen2.5 7B through Ollama), so no data leaves the machine and it costs nothing
 to run; any OpenAI-compatible model can be swapped in with three environment variables.
 
-## Example
-
-<!-- DEMO:START -->
-<!-- DEMO:END -->
-
 ## Design
 
 ```

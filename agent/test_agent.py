@@ -181,7 +181,8 @@ def test_submit_only_when_the_user_asked(session):
         "customer": "Kanchi Furniture Mart", "submit": True, "lines": [{"item": "office table 5 ft", "qty": 1}]})]},
                               {"content": "ok"}], approve=lambda s: approvals.append(s) or True)
     res = agent.run("Draft an order for Kanchi: 1 office table 5 ft")           # no 'submit' in the request
-    assert res.tool_calls[0]["status"] == "refused" and not approvals and not res.created
+    assert res.tool_calls[0]["status"] == "ok" and not approvals                # draft made, submit ignored
+    assert all(status.startswith("Draft") for status in res.created.values())
 
 
 def test_approved_submit_runs_as_the_owner(session):
@@ -207,3 +208,26 @@ def test_erpnext_itself_blocks_destructive_calls_for_the_agent_user(session):
                                       "party": "Kovai Home Centre", "paid_amount": 1, "received_amount": 1})):
         with pytest.raises(ERPError):
             attempt()
+
+
+def test_grounding_uses_the_current_message_in_a_conversation(session):
+    """Demo finding: '2 wardrobes' passed because an EARLIER turn had said 'Wardrobe 3-Door'."""
+    agent, _ = make(session, [{"content": "Short of edge band."},
+                              {"content": "", "tool_calls": [call("create_draft_sales_order", {
+                                  "customer": "Mega Home Stores", "lines": [{"item": "Wardrobe 3-Door", "qty": 2}]})]},
+                              {"content": "Which wardrobe?"}])
+    first = agent.run("Can we make 10 Wardrobe 3-Door with the material we have?")
+    res = agent.run("Draft an order for 2 wardrobes for Mega Home Stores.", first.messages)
+    assert res.tool_calls[0]["status"] == "refused" and not res.created
+
+
+def test_unrequested_submit_flag_still_creates_the_draft(session):
+    """Demo finding: submit=true without being asked used to fail the whole call, so no draft was made."""
+    approvals = []
+    agent, _ = make(session, [{"content": "", "tool_calls": [call("create_draft_material_request", {
+        "submit": True, "lines": [{"item": "wardrobe locks", "qty": 5}]})]}, {"content": "Drafted."}],
+                    approve=lambda s: approvals.append(s) or True)
+    res = agent.run("Raise a purchase request for 5 wardrobe locks")
+    name = next(iter(res.created))
+    assert res.tool_calls[0]["status"] == "ok" and not approvals
+    assert ERPClient().get("Material Request", name)["docstatus"] == 0
